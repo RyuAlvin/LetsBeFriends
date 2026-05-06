@@ -1,0 +1,117 @@
+# ====================
+# 操作系统生成的文件
+# ====================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ====================
+# IDE 相关（前后端通用）
+# ====================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+.springBeans
+
+# ====================
+# 前端 - Ant Design Pro 相关
+# ====================
+ltsbffrontend/node_modules/
+ltsbffrontend/dist/
+ltsbffrontend/build/
+ltsbffrontend/.umi
+ltsbffrontend/.umi-production
+ltsbffrontend/.env.local
+ltsbffrontend/.env.*.local
+ltsbffrontend/package-lock.json
+ltsbffrontend/yarn.lock
+ltsbffrontend/pnpm-lock.yaml
+
+# 前端测试覆盖率
+ltsbffrontend/coverage/
+ltsbffrontend/.jest/
+
+# 前端编辑器相关
+ltsbffrontend/.vscode/
+ltsbffrontend/.idea/workspace.xml
+
+# ====================
+# 后端 - Spring Boot 相关
+# ====================
+ltsbfbackend/target/
+ltsbfbackend/.mvn/
+ltsbfbackend/build/
+ltsbfbackend/!**/src/main/**/target/
+ltsbfbackend/!**/src/test/**/target/
+
+# Maven 相关
+ltsbfbackend/pom.xml.tag
+ltsbfbackend/pom.xml.releaseBackup
+ltsbfbackend/pom.xml.versionsBackup
+ltsbfbackend/pom.xml.next
+ltsbfbackend/release.properties
+ltsbfbackend/dependency-reduced-pom.xml
+ltsbfbackend/.flattened-pom.xml
+
+# Maven wrapper（保留 jar，忽略临时文件）
+# ltsbfbackend/.mvn/wrapper/maven-wrapper.jar
+# ltsbfbackend/.mvn/timing.properties
+# ltsbfbackend/.mvn/wrapper/maven-wrapper.properties.original
+ltsbfbackend/mvnw
+ltsbfbackend/mvnw.cmd
+
+# 日志文件
+ltsbfbackend/logs/
+ltsbfbackend/*.log
+ltsbfbackend/**/logs/
+ltsbfbackend/**/*.log
+
+# 临时数据库文件
+ltsbfbackend/*.db
+ltsbfbackend/*.mdb
+ltsbfbackend/*.h2.db
+
+# 上传目录
+ltsbfbackend/uploads/
+ltsbfbackend/upload/
+ltsbfbackend/temp/
+
+# .gitignore相关
+ltsbfbackend/.gitattributes
+ltsbfbackend/.gitignore
+
+# ====================
+# 敏感信息（永远不要提交）
+# ====================
+*.pem
+*.key
+*.crt
+*.keystore
+*.jks
+application-local.yml
+application-local.properties
+application-dev.yml
+application-dev.properties
+application-secret.yml
+application-secret.properties
+
+# ====================
+# 其他临时文件
+# ====================
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
