@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import Index from "../pages/Index.vue";
+import Team from "../pages/Team.vue";
 
 const onClickLeft =  () => { console.log("onClickLeft"); };
 const onClickRight = () => { console.log("onClickRight"); };
@@ -24,6 +26,13 @@ const onChangeTabBar = (name: string) => {
       <van-icon name="search" size="18" />
     </template>
   </van-nav-bar>
+<!-- TODO 通过路由实现标签页切换 -->
+  <template v-if="active === 'home'">
+    <Index></Index>
+  </template>
+  <template v-if="active === 'friends'">
+    <Team></Team>
+  </template>
   <van-tabbar v-model="active" @change="onChangeTabBar">
     <van-tabbar-item name="home" icon="home-o">主页</van-tabbar-item>
     <van-tabbar-item name="friends" icon="friends-o">队伍</van-tabbar-item>
