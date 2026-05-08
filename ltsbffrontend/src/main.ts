@@ -4,6 +4,8 @@ import App from './App.vue';
 import { Button } from 'vant';
 import { NavBar } from 'vant';
 import { Icon } from 'vant';
+import { Tabbar} from "vant";
+import { TabbarItem} from "vant";
 
 const app = createApp(App);
 
@@ -11,5 +13,7 @@ const app = createApp(App);
 app.use(Button);
 app.use(NavBar);
 app.use(Icon);
+app.use(Tabbar);
+app.use(TabbarItem);
 
 app.mount('#app');
