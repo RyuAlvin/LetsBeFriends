@@ -1,6 +1,10 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './config/route';
+
+// 引入路由
+import routes from './config/routes';
+import { createRouter, createWebHistory } from 'vue-router';
+
 // 1. 引入你需要的组件
 import { Button } from 'vant';
 import { NavBar } from 'vant';
@@ -17,6 +21,11 @@ app.use(Icon);
 app.use(Tabbar);
 app.use(TabbarItem);
 
+// 注册路由
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
 app.use(router);
 
 app.mount('#app');
