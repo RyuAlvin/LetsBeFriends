@@ -26,16 +26,10 @@ const onChangeTabBar = (name: string) => {
       <van-icon name="search" size="18" />
     </template>
   </van-nav-bar>
-<!-- TODO 通过路由实现标签页切换 -->
-  <template v-if="active === 'home'">
-    <Index></Index>
-  </template>
-  <template v-if="active === 'friends'">
-    <Team></Team>
-  </template>
+  <router-view></router-view>
   <van-tabbar v-model="active" @change="onChangeTabBar">
-    <van-tabbar-item name="home" icon="home-o">主页</van-tabbar-item>
-    <van-tabbar-item name="friends" icon="friends-o">队伍</van-tabbar-item>
+    <van-tabbar-item to="/" name="home" icon="home-o">主页</van-tabbar-item>
+    <van-tabbar-item to="/team" name="friends" icon="friends-o">队伍</van-tabbar-item>
     <van-tabbar-item name="user" icon="user-o">个人</van-tabbar-item>
   </van-tabbar>
 </template>

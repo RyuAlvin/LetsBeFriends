@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import router from './config/route';
 // 1. 引入你需要的组件
 import { Button } from 'vant';
 import { NavBar } from 'vant';
@@ -15,5 +16,7 @@ app.use(NavBar);
 app.use(Icon);
 app.use(Tabbar);
 app.use(TabbarItem);
+
+app.use(router);
 
 app.mount('#app');
