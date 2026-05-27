@@ -11,6 +11,12 @@ import { NavBar } from 'vant';
 import { Icon } from 'vant';
 import { Tabbar} from "vant";
 import { TabbarItem} from "vant";
+import { Search } from "vant";
+import { Divider } from "vant";
+import { TreeSelect } from "vant";
+import { Col } from "vant";
+import { Row } from "vant";
+import { Tag } from "vant";
 
 const app = createApp(App);
 
@@ -20,6 +26,12 @@ app.use(NavBar);
 app.use(Icon);
 app.use(Tabbar);
 app.use(TabbarItem);
+app.use(Search);
+app.use(Divider);
+app.use(TreeSelect);
+app.use(Col);
+app.use(Row);
+app.use(Tag);
 
 // 注册路由
 const router = createRouter({

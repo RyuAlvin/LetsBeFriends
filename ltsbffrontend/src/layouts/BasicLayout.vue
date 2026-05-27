@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Index from "../pages/Index.vue";
-import Team from "../pages/Team.vue";
+import { useRouter } from "vue-router";
 
-const onClickLeft =  () => { console.log("onClickLeft"); };
-const onClickRight = () => { console.log("onClickRight"); };
+const router = useRouter();
+
+const onClickLeft =  () => {
+  router.back();
+};
+const onClickRight = () => {
+   router.push("/search");
+};
 
 // 这里的active和模板中的item已双向绑定，active的值随着选中的标签变化而变化
 const active = ref("home");
